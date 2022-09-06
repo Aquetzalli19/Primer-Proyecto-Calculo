@@ -1,0 +1,47 @@
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+nav{
+    background-color: #0c7e7e;
+}
+.imagenComienzo{
+    max-width: 14rem;
+    margin: auto;
+    display: block;
+}
+.main{
+    
+    height: 100%;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    
+}
+.boton{
+    transition: linear 0.3s;
+    display: block;
+    text-decoration: none;
+    margin: auto;
+    max-width: 15rem;
+    color: #fff;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    background-color: #0c7e7e;
+    border-radius: 1rem;
+
+}
+
+.boton:hover{
+    transition: linear 0.3s;
+    background-color: #eb7b59;
+    color: #fff;
+    font-weight: bold;
+}
+.contenerdor_cards{
+    max-width: 60rem;
+    display: flex;
+    justify-content: center;
+}
