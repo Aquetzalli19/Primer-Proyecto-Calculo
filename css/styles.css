@@ -13,12 +13,12 @@ nav{
     display: block;
 }
 .main{
-    
+
     height: 100%;
     align-items: center;
     margin: auto;
     text-align: center;
-    
+
 }
 .boton{
     transition: linear 0.3s;
@@ -44,4 +44,24 @@ nav{
     max-width: 60rem;
     display: flex;
     justify-content: center;
+}
+/* .inputs-container{
+    max-width: 12rem;
+    display: flex;
+    justify-content: center;
+} */
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+.respuestas{
+    margin-top: 3rem;
+    
+}
+.imagen{
+    max-width: 15rem;
+    border-radius: 50%;
+}
+.descripcion{
+    max-width: 30rem;
 }
