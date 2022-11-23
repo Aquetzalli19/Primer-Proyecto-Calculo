@@ -1,0 +1,78 @@
+<html>
+
+ <head>
+
+     <title>recta_tangente</title>
+
+     <script >
+
+       function rd(x)
+
+         {  return Math.round(1000*x)/1000   }
+
+ 
+
+        function calcular()       
+
+         {        fx=document.funcion[0].value,
+
+                   xa=Number(document.funcion[1].value),
+
+                   dfx=document.funcion[2].value,           
+
+                   x=xa ; fa=eval(fx) ; dfa=rd(eval(dfx)) ; n=rd(-1/dfa) ; btgte=rd(fa-dfa*xa) ; bnorm=rd(fa-n*xa);     
+
+             document.funcion[4].value=rd(xa); document.funcion[5].value=rd(fa);
+
+             document.funcion[6].value=dfa; document.funcion[7].value=n;
+
+             if(btgte<0) {st="x  -"} else {st="x  +"}; if(bnorm<0) {sn="x  -"} else {sn="x  +"}
+
+             tgte="y= "+dfa+st+btgte; normal="y= "+n+sn+bnorm;
+
+             document.funcion[8].value=tgte; document.funcion[9].value=normal
+
+        }
+
+      </script>
+
+  </head>
+
+ 
+
+<body bgcolor=cyan>
+
+Rectas tangente y normal a la gráfica de una función y=f(x) en el punto P(a,f(a)).<HR>
+
+  <form name="funcion">
+
+      Introduce la función y la abscisa del punto:<BR>
+
+      f(x) = <input type="text" size=25>
+
+      a=<input type="text" size=3><BR>
+
+      Introduce la función derivada:<BR>
+
+      f '(x)=<input type="text" size=25>
+
+      <input type="button" value="Calcular" OnClick="calcular()"><HR>
+
+      Punto P=(<input type="text"  size=3>,<input type="text" size=3>)<BR>
+
+      Pte.recta tangente..m=<input type="text"  size=3><BR>
+
+      Pte.recta normal....m'=<input type="text" size=3><HR>
+
+      Recta tangente..<input type="text"><BR>
+
+      Recta normal....<input type="text">
+
+  </form>
+
+</body>
+
+</html>
+
+ 
+
